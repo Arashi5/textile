@@ -6,11 +6,11 @@ use Bramus\Router\Router;
 $router = new Router();
 
 $router->get('/', function () {
-    require_once ('app/view/homepage.php');
+    require_once('assets/view/homepage.php');
 });
 
 $router->get('/test', function () {
-    require_once ('app/view/test.php');
+    require_once('assets/view/test.php');
 });
 
 $router->set404(function () {
