@@ -1,16 +1,18 @@
 <?php
-require ("app/header.php");
+    use App\Meta;
+
+    $meta = (new Meta())->execute()
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="ru">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title><?=$title?></title>
+    <title><?=$meta['title']?></title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="<?php echo SERVER_NAME?>/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body class="background">
@@ -28,7 +30,7 @@ require ("app/header.php");
         <br>
         <div class="row justify-content-md-center">
             <div class="col-1-2">
-                <span class="sub-text font-weight"><?php echo $regionalFootballClub?></span>
+                <span class="sub-text font-weight"><?=$meta['regional_football_club']?></span>
             </div>
         </div>
         <div class="row justify-content-md-center">
@@ -38,7 +40,7 @@ require ("app/header.php");
         </div>
         <div class="row justify-content-md-center">
             <div class="col-1-2">
-                <span class="undertitle"><?php echo $unoffFunPortal?></span>
+                <span class="undertitle"><?=$meta['unoff_fan_portal']?></span>
             </div>
         </div>
         <div class="row justify-content-md-center">

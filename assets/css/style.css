@@ -188,7 +188,7 @@ td:first-child {
 }
 
 .footer-container {
-    background-image:  url('/images/footer_img.png');
+    background-image:  url('/assets/images/footer_img.png');
     position: relative;
     width: 100%; /* Ширина слоя */
     padding: 20px;
