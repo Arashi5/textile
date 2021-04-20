@@ -5,7 +5,7 @@ $teams = (new Teams())->execute();
 
 ?>
 
-<?php /**header.php*/ ?>
+<?php /**Meta.php*/ ?>
 <?php
 
 /**

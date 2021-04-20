@@ -22,9 +22,9 @@ $router->get('/team/', function () {
 });
 
 //тестовая страница, для проверки url
-$router->get('/team/(\d+)', function () {
-    require_once('assets/view/player.php');
-});
+// $router->get('/team/(\d+)', function () {
+//    require_once('assets/view/player.php');
+// });
 
 //404
 $router->set404(function () {
